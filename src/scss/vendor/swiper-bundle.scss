@@ -216,22 +216,16 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 0;
-  
-  width: 54px;
-  height: 54px;
-  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
-
-  img{
-    transform: scale(5);
-  }
-
 
   @media($media_sm) {
     width: 15px;
@@ -266,11 +260,7 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  right: 100px;
-
-  img {
-    transform: scale(5) rotate(180deg);
-  }
+  left: 20px;
 
   @media($media_xxxl) {
     left: 0;
