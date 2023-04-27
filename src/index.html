@@ -1,0 +1,187 @@
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+<main>
+    <div class="first">
+        @@include('html/header.html', {})
+    
+            <div class="container">
+                <div class="first_main">
+                    <div class="first_item">
+                        <h1 class="h1">Explore, Buy and Sell <span class="">the Best NFTs!</span> </h1>
+                   
+                        <div class="first_btns">
+                            <button class="first_btn">Explore</button>
+                            <button class="first_btn2">Create</button>
+                        </div>
+                        
+                        <div class="first_numbers">
+                            <div class="first_number">
+                                <p>32k+</p>
+                                Artworks
+                            </div>
+
+                            <div class="first_number">
+                                <p>20k+</p>
+                                Auctions
+                            </div>
+
+                            <div class="first_number">
+                                <p>12k+</p>
+                                Creators
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="first_nft">
+                        <div class="first-nft_header">
+                    
+                            <div>
+                                <p class="nft-header_title"> Current Bid</p>
+                                <p class="nft-header_numbers">0.99 ETH</p>
+                            </div>
+                        
+                            <div>
+                                <p class="nft-header_title">Ends in</p>
+                                <p class="nft-header_numbers">25 hrs</p>
+                            </div>
+
+                        </div>
+
+                        <div class="first-nft_footer">
+                        
+                            <div>
+                                <p class="nft-footer_title">Artist</p>
+                                <p class="nft-footer_nick">@wzard</p>
+                            </div>
+            
+                            <div>
+                                <button class="first-nft_btn">Start Bid</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="first_arrow-btn">
+                <img src="img/icons/icons.svg#arrow-down" alt="">
+            </button>
+    </div>
+
+    <div class="companies">
+        <div class="container">
+            <div class="companies_main">
+                <img src="img/icons/icons.svg#company1" alt="company">
+                <img src="img/icons/icons.svg#company2" alt="company">
+                <img src="img/icons/icons.svg#company3" alt="company">
+                <img src="img/icons/icons.svg#company4" alt="company">
+            </div>
+        </div>
+    </div>
+
+    <div class="auctions">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="title title--purple"><span>Live Auctions</span></h2>
+            </div>
+            <div class="swiper auctions-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide auction-slide">
+                        <div class="auctions_item"> 
+                            <div class="auctions_img">
+                                <img src="img/auctions/1.jpg" alt="">
+                                <div>03:18:24</div>
+                            </div>
+
+                            <div class="auctions_profile">
+                                <div class="auctions-profile_guy">
+                                    <img src="img/auctions/avatar1.png" alt="profile">
+                                    <div>
+                                        <p class="auctions-profile_owner">Virtual Art</p>
+                                        <p class="auctions-profile_nick">by @wzard</p>
+                                    </div>
+                                </div>
+
+                                <div class="auctions-profile_likes">
+                                    <img src="img/icons/icons.svg#heart" alt="heart">
+                                    <span>92</span>
+                                </div>
+                            </div>
+
+                            <div class="auctions_bid">
+                                <p class="auctions-bid_title">Current Bid</p>
+                                <p class="auctions-price">4.89 ETH</p>
+                            </div>
+
+                            <button class="auctions_btn">Place a bid</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev1">
+                    <img src="img/icons.svg#arrow-right" alt="arrow-right">
+                </div>
+    
+                <div class="swiper-button-next swiper-button-next1">
+                    <img src="img/icons.svg#arrow-right" alt="arrow-right">
+                </div>
+            </div>
+
+            <button class="auctions_view-all">View All</button>
+
+             
+          
+
+        </div>
+    </div>
+
+    <div class="how">
+        <div class="container">
+            <h2 class="how_title">How it works</h2>
+            
+            <div class="how_items">
+
+                        <div class="how_item">
+
+                            <div class="how_icon">
+                                <img src="img/icons/icons.svg#how1" alt="how icon">
+
+                                <h4 class="how-title_icon">Set Up Your Wallet</h4>
+                            </div>
+
+                        <div class="how_item">
+
+                                <div class="how_icon">
+                                    <img src="img/icons/icons.svg#how2" alt="how icon">
+            
+                                    <h4 class="how-title_icon">Set Up Your Wallet</h4>
+                        </div>    
+
+                        <div class="how_item">
+
+                            <div class="how_icon">
+                                <img src="img/icons/icons.svg#how3" alt="how icon">
+
+                                <h4 class="how-title_icon">Set Up Your Wallet</h4>
+                            </div>
+
+                        <div class="how_item">
+
+                                <div class="how_icon">
+                                    <img src="img/icons/icons.svg#how4" alt="how icon">
+            
+                                    <h4 class="how-title_icon">Set Up Your Wallet</h4>
+                                </div>      
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+@@include('html/footer.html', {})
