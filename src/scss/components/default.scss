@@ -1,12 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
   color: $white2;
   @include font('Work Sans', 400);
-
   background: $black;
 
-  &.active-body {
+  &.active {
     overflow: hidden;
   }
 }
@@ -40,23 +43,47 @@ button {
   color: #F5FBF2;
   position: relative;
 
-  &::after {
+  &:after {
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%) translateX(-40%);
-    background: $purple;
     width: 110px;
     height: 110px;
     border-radius: 50%;
   }
 
   span {
-      text-align: center;
-      position: relative;
-      z-index: 2;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &--purple {
+    &:after {
+      background: $purple;
     }
+  }
+
+  &--red {
+    &:after {
+      background: $red;
+    }
+  }
+
+  @media(max-width: 800px) {
+    font-size: 34px;
+  }
+
+  @media(max-width: 600px) {
+    font-size: 30px;
+
+    &:after {
+      width: 84px;
+      height: 84px;
+    }
+  }
 }
 
 .title-wrapper {
@@ -68,4 +95,15 @@ button {
 .swiper {
   padding-top: 100px !important;
   overflow: visible !important;
+
+  @media(max-width: 600px) {
+   padding-top: 0 !important;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @media(max-width: 600px) {
+    display: none !important;
+  }
 }

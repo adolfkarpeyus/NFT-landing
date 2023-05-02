@@ -216,16 +216,17 @@
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  top: 0;
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
   z-index: 10;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
 
   @media($media_sm) {
     width: 15px;
@@ -260,10 +261,10 @@
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 20px;
+  right: 100px;
 
-  @media($media_xxxl) {
-    left: 0;
+  img {
+    transform: rotate(180deg);
   }
 }
 
